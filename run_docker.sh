@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build - --tag=MLmicroservice
+docker build . --tag=ml-microservice
 
 # Step 2: 
 # List docker images
@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run -it --rm --name MLmicroservice -p 8000:80 MLmicroservice
+docker run -it --rm --name ml-microservice -p 8000:80 ml-microservice
